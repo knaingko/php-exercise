@@ -1,0 +1,46 @@
+/*form*/
+body,html{
+   color:#333;
+   font-family: 'Source Sans Pro', sans-serif;
+}
+.form_table{
+   margin:20px 0 20px 0;
+}
+.table.table-borderless{
+  margin-top:40px;
+}
+.table.table-borderless td, .table.table-borderless th {
+    border: 0 !important;
+}
+.table.table-borderless {
+    margin-bottom: 0px;
+}
+.save{
+   border-radius: 3px;
+   border:1px solid #197582;
+   margin:5px;
+   background:#197582;
+   color:#fff;
+   padding:3px;
+}
+hr{
+   border-top:1px solid #197582;
+}
+.table.table-bordered td, .table.table-bordered th {
+    border:1px solid #197582;
+}
+.table.table-bordered th {
+    background:  #197582;
+    color:#fff;
+    text-align:center;
+}
+.table.table-bordered td {
+    color:#333;     
+}
+.delete{
+   float:right;
+   margin-bottom:25px;
+}
+.check{
+  text-align: center;
+}
