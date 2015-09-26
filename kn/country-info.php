@@ -35,6 +35,16 @@
                 submit();
             }
         }
+        function butDelete_OnClick(CountryID){
+            with(document.CountryForm)
+            {
+                alert(CountryID);
+//                hidAction.value = 'NewRecord';
+//                action = 'country-info.php';
+//                method = 'post';
+//                submit();
+            }
+        }
     //-->
     </script>
 </head>
@@ -77,7 +87,7 @@
                     echo '<tr>';
                     echo '<td>'. $value['CountryID'] .'</td>';
                     echo '<td>'. $value['CountryName'] .'</td>';
-                    echo '<td><button>Edit</button>&nbsp;<button>Delete</button></td>';
+                    echo '<td><button>Edit</button>&nbsp;<button onclick="butDelete_OnClick('. $value['CountryID'] .')">Delete</button></td>';
                     echo '</tr>';
                 } ?>
             </tbody>
