@@ -119,7 +119,6 @@
                         file_put_contents($TempFile, $line, FILE_APPEND);
                     }
                 }
-                echo $line;
             }
             fclose($handle);
         }

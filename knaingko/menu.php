@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -14,12 +14,13 @@
         <!-- Start Collapse Navigator -->
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li  ><a href="index.php">Home</a></li>
-                <li  ><a href="about-us.php">About Us</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about-us.php">About Us</a></li>
+
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Back Office <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Country</a></li>
+                        <li><a href="country-list.php">Country</a></li>
                     </ul>
                 </li>
                 <li><a href="contact-us.php">Contact</a></li>
