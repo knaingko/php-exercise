@@ -33,7 +33,8 @@ $data = GetAllData('./data/country.csv')
 
     <!-- Vendor Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-submenu.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
     <link href="css/theme.css" rel="stylesheet">

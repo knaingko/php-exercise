@@ -15,12 +15,14 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="about-us.php">About Us</a></li>
+                <li><a href="about-us.php" >About Us</a></li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Back Office <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" > Back Office <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="country-list.php">Country</a></li>
+                        <li><a href="country-list.php">Country List</a></li>
+                        <li><a href="country-entry.php">Country Entry</a></li>
+                        <li><a href="country-edit.php">Country Edit</a></li>
                     </ul>
                 </li>
                 <li><a href="contact-us.php">Contact</a></li>
