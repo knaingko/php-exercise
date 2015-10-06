@@ -1,0 +1,49 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+    padding-top: 50px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
+
+.breadcrumb > li + li:before {
+    color: #CCCCCC;
+    content: ">";
+    padding: 0 5px;
+}
+ol.breadcrumb > li.active {
+    color: #e67e22;
+}
+
+.control-label{
+    text-align: left;
+}
+
+.input-group-addon{
+    width: 100px;
+    text-align: left;
+}
+
+.btn{
+    margin-right: 5px;
+    height:35px;
+}
+
+.table-btn{
+    width: 80px;
+    margin: 0px;
+    background: #CCCCCC;
+    color: #761c19;
+}
+
+.action-btn{
+    width: 90px;
+}
+
+.panel-footer{
+    height:55px;
+}
