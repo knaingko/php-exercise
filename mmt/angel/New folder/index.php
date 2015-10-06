@@ -13,60 +13,7 @@
   <script src="js/bootstrap.min.js"></script> 
 </head>
 <body>
-  <div class="header">
-    <nav class="navbar-inverse" role="navigation"style="background:#fff;" >
-      <div class="container ">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapes">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.php"><i class="fa fa-camera-retro"></i>&nbsp;ANGEL</a>
-        </div>
-        <div class="collapse navbar-collapse" id="menu-collapes">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="current"><a href="index.php">Home</a></li>
-            <li><a href="portfolio.php" >Portfolio</a></li>
-            <li><a href="gallery.php">Gallery</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" > Country <span class="caret"></span></a>
-              <ul class="dropdown-menu active">
-                <li><a href="./country/country-list.php">Country List</a></li>
-                <li><a href="./country/country-entry.php">Country Entry</a></li>
-                <li><a href="./country/country-edit.php">Country Edit</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" > City <span class="caret"></span></a>
-              <ul class="dropdown-menu active">
-                <li><a href="./city/city-list.php">City List</a></li>
-                <li><a href="./city/city-entry.php">City Entry</a></li>
-                <li><a href="./city/city-edit.php">City Edit</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" > Location <span class="caret"></span></a>
-              <ul class="dropdown-menu active">
-                <li><a href="./location/location-list.php">Location List</a></li>
-                <li><a href="./location/location-entry.php">Location Entry</a></li>
-                <li><a href="./location/location-edit.php">Location Edit</a></li>
-              </ul>
-            </li>
-            <!-- li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" > Category <span class="caret"></span></a>
-              <ul class="dropdown-menu active">
-                <li><a href="./category/category-list.php">Category List</a></li>
-                <li><a href="./category/category-entry.php">Category Entry</a></li>
-                <li><a href="./category/category-edit.php">Category Edit</a></li>
-              </ul>
-            </li> -->
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+<?php require_once 'header.php' ?>
     <div class="banner text-center">
       <div class="container">
         <div class="banner-info animated zoomIn">
@@ -169,9 +116,9 @@
             <div class="col-xs-12 col-sm-6 col-md-6 res">
               <h3 style="color:#fff;">CONTACT US</h3>
               <p style="color:#fff;line-height: 30px;"><span style="font-weight:normal;">ANGEL </span><br />
-                <i class="fa fa-location-arrow"></i>&nbsp;N0.49,Hlaing Township,Thann Lann,Yangon<br />
-                <i class="fa fa-phone"></i>&nbsp;+95 09791193583<br />
-                <i class="fa fa-envelope-o"></i>&nbsp;angel@gmail.com
+              <i class="fa fa-location-arrow"></i>&nbsp;N0.49,Hlaing Township,Thann Lann,Yangon<br />
+              <i class="fa fa-phone"></i>&nbsp;+95 09791193583<br />
+              <i class="fa fa-envelope-o"></i>&nbsp;angel@gmail.com
               </p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 res">
@@ -182,9 +129,9 @@
               </div>
               <form class="form-inline">
                 <div class="form-group form res">
-                   <label for="exampleInputEmail3" class="email">Email address:</label><br />
-                   <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email" style="width:100%;"><br />
-                   <input class="btn submit" type="submit" value="Sign Up">
+                  <label for="exampleInputEmail3" class="email">Email address:</label><br />
+                  <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email" style="width:100%;"><br />
+                  <input class="btn btn-default submit" type="submit" value="Sign Up">
                 </div>
               </form>
             </div>
@@ -193,9 +140,9 @@
       </div>
       <div class="copyright">
         <div class="copy">
-          <p>Copyright &copy; 2015 Company Name. Design by <a href="http://www.takumi-internet.com" rel="nofollow">TAKUMI Internet</a></p>
+        <p>Copyright &copy; 2015 Company Name. Design by <a href="http://www.takumi-internet.com" rel="nofollow">TAKUMI Internet</a></p>
         </div>
       </div>
-    </div>
+    </div>     
   </body>
 </html>

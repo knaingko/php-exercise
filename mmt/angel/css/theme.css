@@ -1,0 +1,22 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+html,
+body {
+/*    padding-top: 25px;*/
+    height: 100%;
+}
+.breadcrumb > li + li:before {
+    color: #CCCCCC;
+    content: "/";
+    padding: 0 5px;
+}
+ol.breadcrumb > li.active {
+    color: #e67e22;
+}
+
+.control-label{
+    text-align: left;
+}
+.panel-footer{
+    height:55px;
+}

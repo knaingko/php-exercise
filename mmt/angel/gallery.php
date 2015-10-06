@@ -14,16 +14,50 @@
 </head>
    <body>
       <div class="header">
-         <div class="container"> <a class="navbar-brand" href="index.php"><i class="fa fa-camera-retro"></i>&nbsp;ANGEL</a>
-            <div class="menu"> <a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
-               <ul class="nav" id="nav">
-                 <li><a href="index.php">Home</a></li>
-                 <li><a href="portfolio.php">PORTFOLIO</a></li>
-                 <li class="current"><a href="gallery.php">GALLERY</a></li>                         
-               </ul><div class="clear"></div>
-              <script type="text/javascript" src="js/responsive-nav.js"></script> 
+        <nav class="navbar-inverse" role="navigation"style="background:#fff;" >
+          <div class="container ">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapes">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php"><i class="fa fa-camera-retro"></i>&nbsp;ANGEL</a>
             </div>
-         </div>
+            <div class="collapse navbar-collapse" id="menu-collapes">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="portfolio.php" >Portfolio</a></li>
+                <li><a href="gallery.php">Gallery</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" > Country <span class="caret"></span></a>
+                  <ul class="dropdown-menu active">
+                    <li><a href="./country/country-list.php">Country List</a></li>
+                    <li><a href="./country/country-entry.php">Country Entry</a></li>
+                    <li><a href="./country/country-edit.php">Country Edit</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" > City <span class="caret"></span></a>
+                  <ul class="dropdown-menu active">
+                    <li><a href="./city/city-list.php">City List</a></li>
+                    <li><a href="./city/city-entry.php">City Entry</a></li>
+                    <li><a href="./city/city-edit.php">City Edit</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" > Location <span class="caret"></span></a>
+                  <ul class="dropdown-menu active">
+                    <li><a href="./location/location-list.php">Location List</a></li>
+                    <li><a href="./location/location-entry.php">Location Entry</a></li>
+                    <li><a href="./location/location-edit.php">Location Edit</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
       <div class="banner text-center">
          <div class="container">
