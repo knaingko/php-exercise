@@ -115,11 +115,51 @@
               <td><input type="text" class="form-control input-sm" name="location_name" id="location_name" value="<?php echo($Name);?>" placeholder="Enter location name" required /></td>
             </tr>                    
             <tr>
+              <td>Month:</td>
+              <td>
+                <select name="month" class="form-control form-select" id="sel1">
+                  <?php
+
+                    $months = array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+                    foreach ($months as $value) {
+                        echo "<option value=\"" . $value . "\">" . $value . "</option>";
+                    }
+
+                  ?>
+                </select> 
+              </td>
+            </tr> 
+            <tr>
+              <td>Country:</td>
+              <td>
+                <select name="country" class="form-control form-select" id="sel1">
+                  <?php
+
+                    echo "<option></option>";
+
+                  ?>
+                </select> 
+              </td>
+            </tr> 
+            <tr>
+              <td>City:</td>
+              <td>
+                <select name="city" class="form-control form-select" id="sel1">
+                  <?php
+
+                    echo "<option></option>";                  
+
+                  ?>
+                </select> 
+              </td>
+            </tr> 
+            <tr>
               <td></td>
               <td><button type="button" class="save" onclick="SaveData();">Save</button>
                   <button type="button" class="save" onclick="window.open('location-list.php','_self');">Cancel</button>
               </td>
-            </tr>
+            </tr>                
           </table>
         </form>
       </div>
