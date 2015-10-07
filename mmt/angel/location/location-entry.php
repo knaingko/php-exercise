@@ -10,12 +10,13 @@
         $ID =  $_POST['location_id'];
         $Name = $_POST['location_name'];
         $Month = $_POST['month'];
-        $CountryID = $_POST['country_id'];
-        $CityID = $_POST['country_id'];
-        $_savedata = array('LocationID'=>$ID, 'LocationName'=>$Name,'Month'=>$Month, 'CountryID'=>$country_id,'CityID'=>$city_id);
+        $_savedata = array('LocationID'=>$ID, 'LocationName'=>$Name,'Month'=>$Month);
         InsertData('.././data/location.csv', $_savedata );
         redirect('location-list.php');
     }
+    $dataCountry = GetAllData('.././data/country.csv');
+    //var_dump($data);
+   $dataCity = GetAllData('.././data/city.csv') 
 ?>
 <html lang="en">
 <head>
@@ -107,13 +108,13 @@
           <tr>
             <td>Month:</td>
             <td>
-              <select name="month" style="border-radius:3px;">
+              <select name="month" class="form-control form-select" id="sel1">
                 <?php
 
                   $months = array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 
                   foreach ($months as $value) {
-                      echo "<option value=\"" . $value . "\">" . $value . "</option>";
+                      echo "<option value='" . $value . "'>" . $value . "</option>";
                   }
 
                 ?>
@@ -123,30 +124,28 @@
           <tr>
             <td>Country:</td>
             <td>
-              <select name="country" style="border-radius:3px;">
+              <select name="country_id" class="form-control form-select" id="sel1">
+                
                 <?php
+                foreach ($dataCountry as $value) {
 
-                  $months = array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-
-                  foreach ($months as $value) {
-                      echo "<option value=\"" . $value . "\">" . $value . "</option>";
-                  }
-
+                  echo "<option value='" . $value["CountryID"] . "'>" . $value["CountryName"] . "</option>";
+                }
+                                   
                 ?>
+
               </select> 
             </td>
           </tr> 
           <tr>
             <td>City:</td>
             <td>
-              <select name="city" style="border-radius:3px;">
+              <select name="city_id" class="form-control form-select" id="sel1">
                 <?php
+                  foreach ($dataCity as $value) {
 
-                  $months = array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-
-                  foreach ($months as $value) {
-                      echo "<option value=\"" . $value . "\">" . $value . "</option>";
-                  }
+                  echo "<option value='" . $value["CityID"] . "'>" . $value["CityName"] . "</option>";
+                }                 
 
                 ?>
               </select> 
@@ -161,7 +160,7 @@
         </table>
       </form>
     </div>
-  </div>
+  </div><p style="float:right;"><a href="#top" style="text-decoration:none;">Top</a></p>
 </div>
 <div class="footer">
   <div class="footer_bottom">
